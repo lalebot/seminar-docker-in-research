@@ -1,1 +1,5 @@
-# docker-in-research
+# Repositorio del seminario
+
+Fecha:
+Lugar:
+Slides: 

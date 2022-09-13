@@ -13,9 +13,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends git sqlite3 wge
 
 RUN pip install urllib3 
 
-RUN cd ..
-ADD https://raw.githubusercontent.com/lalebot/pip-prom-tom/master/conf.ini .
-ADD https://raw.githubusercontent.com/lalebot/pip-prom-tom/master/exa_prom.txt .
-ADD https://raw.githubusercontent.com/lalebot/pip-prom-tom/master/pip_prom_tom.py .
+COPY conf.ini .
+COPY exa_prom.txt .
+COPY pip_prom_tom.py .
 
 #CMD ["python","pip_prom_tom.py -i exa_prom.txt -o proyecto1 -u 1000 -g 250 -p 1"]
