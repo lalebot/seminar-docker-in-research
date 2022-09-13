@@ -1,0 +1,7 @@
+version: '3'
+services:
+  app:
+    build: . 
+    volumes:
+      - "./proyecto1:/proyecto1_out"
+    command: "python pip_prom_tom.py -i exa_prom.txt -o proyecto1 -u 1000 -g 250 -p 1"
