@@ -1,8 +1,0 @@
-version: '3'
-services:
-  app:
-    image: lalebot/pip-prom-tom
-    volumes:
-    - "./output:/output_out"
-    - "./input:/input"
-    command: "python pip_prom_tom.py -i /input/prom.txt -o output -u 1000 -g 250 -p 1"
