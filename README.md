@@ -1,4 +1,4 @@
-# Repositorio del Seminario "Docker Containers, su potencial reproductivo en procesos de aprendizajes e investigación" 
+# Repositorio del Seminario "Docker Containers, reproducibilidad en procesos de aprendizajes e investigación"
 
 ## Seminario de actualización de la Especialización en Bioinformática UNR
 
