@@ -6,12 +6,12 @@ Fecha: 26/11/2022
 
 Lugar: Facultad de Ciencias Agrarias - UNR
 
-Slides hechas con el plugin AdvancedSlides de Obsidian: https://lalebot.github.io/seminar-docker-in-research/
+Slides hechas con el plugin __AdvancedSlides__ de __Obsidian__: https://lalebot.github.io/seminar-docker-in-research/
 
 ---
 
 ## About
-El repositorio contiene los archivos del Semianario y la presentación del mismo.
+El repositorio contiene los archivos del Seminario y la presentación del mismo.
 
 Se presentan dos casos en los que el uso de #Docker Container facilita la reproductibilidad en el proceso de aprendizaje y de investigación:
 
