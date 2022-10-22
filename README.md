@@ -8,7 +8,7 @@ Lugar: Facultad de Ciencias Agrarias - UNR
 
 Slides hechas con el plugin __AdvancedSlides__ de __Obsidian__: https://lalebot.github.io/seminar-docker-in-research/
 
-<img src="/images/flyer.jpg" width="200">
+<img src="/images/flyer.jpg" width="600">
 
 
 
