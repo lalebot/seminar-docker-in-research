@@ -101,7 +101,7 @@ Ing (Esp) Alejandro D. Pistilli
 
 
 <aside class="notes"><p>El software informático es parte de la mayoría (sino de todas) las investigaciones científicas de la actualidad y es parte esencial de cualquier recorrido educativo de grado y posgrado, ya sea como medio o como objeto de estudio.<br>    Aunque la reproducibilidad computacional parece más sencilla que replicar experimentos físicos, 
-    - Obsolescencia
+    - Obsolescencia, no funcione o que no aproveche.
     - Constante actualización. 
     -¿Quien no tuvo problemas con ejecutar in programa? ¿Linux Windows? ¿Me podrían dar ejemplos de casos que no funcionó? ¿Correciones de trabajos prácticos/finales? //</p>
 </div></aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
@@ -257,9 +257,7 @@ docker exect -it <nombre_del_contenedor>
 </div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 600px; width: 800px; min-height: 600px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
---- 
-
-## Ventajas
+### Ventajas
 
 - Rápida y sencilla instalación
 - Multiplataforma: Linux, Windows y MacOS
@@ -281,9 +279,12 @@ docker exect -it <nombre_del_contenedor>
 
 - &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Descripción de los experimentos, entornos, datos y flujos de trabajo -> **Dockerfile**
 - &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Disponibilidad de las dependencias y librerías -> **Docker Images**
-- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->La complejidad de la naturaleza de los experimentos hacen difícil la réplica  del mismo-> **Docker Container**
-- &shy;<!-- .element: class="fragment" data-fragment-index="4" -->Claridad de las actualizaciones y correcciones del software a lo largo del tiempo -> **Versionado**
-- &shy;<!-- .element: class="fragment" data-fragment-index="5" -->Servicio de almacenamiento y distribución -> **DockerHub.com**
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 600px; width: 800px; min-height: 600px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->La complejidad de la naturaleza de los experimentos hacen difícil la réplica  del mismo-> **Docker Container**
+- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Constantes actualizaciones y correcciones del software a lo largo del tiempo -> **Versionado**
+- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->Servicio de almacenamiento y distribución -> **DockerHub.com**
 </div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 600px; width: 800px; min-height: 600px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
@@ -293,18 +294,17 @@ docker exect -it <nombre_del_contenedor>
 - Prototipos (y versionarlos).
 - Pruebas conceptuales.
 - Análisis computacionales o experimentos.
-
-Todo esto junto con todas las **dependencias** y **configuraciones** dentro de una unidad estandarizada para la **reproducibilidad de la investigación**.
 </div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 600px; width: 800px; min-height: 600px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 ## Caso 1
-[Trabajo final](https://github.com/lalebot/pip-prom-tom) de la Especialización en Bioinformática
+### Reproducibilidad de aplicaciones en diferentes sistemas operativos
+[Trabajo final](https://github.com/lalebot/pip-prom-tom) de la Especialización en Bioinformática.
 </div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 600px; width: 800px; min-height: 600px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 ## Caso 2
-Linux en Windows
+### Uso de Linux dentro de Windows para estudio e investigación
 
 ```bash
 docker run -it --entrypoint=bash ubuntu
@@ -313,11 +313,6 @@ docker run -it --entrypoint=bash ubuntu
 
 <aside class="notes"><p>uname -a</p>
 </aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 600px; width: 800px; min-height: 600px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-## Caso 3
-Reconocimiento de objetos con Pytorch a través de un Webserver Flask en Python
-</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 600px; width: 800px; min-height: 600px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 ### Referencias
