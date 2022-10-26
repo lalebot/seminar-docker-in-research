@@ -6,7 +6,7 @@
 
     <title></title>
     <link rel="stylesheet" href="dist/reveal.css" />
-    <link rel="stylesheet" href="dist/theme/solarized.css" id="theme" />
+    <link rel="stylesheet" href="dist/theme/moon.css" id="theme" />
     <link rel="stylesheet" href="plugin/highlight/monokai.css" />
 	<link rel="stylesheet" href="css/layout.css" />
 	<link rel="stylesheet" href="plugin/customcontrols/style.css">
@@ -91,110 +91,39 @@
 ### Reproducibilidad de procesos de aprendizaje e investigación de software
 
 Ing (Esp) Alejandro D. Pistilli
-</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 600px; width: 800px; min-height: 600px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-<img src="Engi/adjuntos/Pasted image 20220915111659.png" alt="" style="object-fit: scale-down">
-
-<aside class="notes"><p>BUILD: base: porongo, app: yerba artesanal, dependencias: burrito, cedrón y menta. Necesito dos mates porque uno es una copia del otro
-    IMAGE: Mate armado solo en una caja con instrucciones.
-    PULL: envía una copia del mate.
-    RUN: cebar el mate con el parámetro de temperatura de agua.
-    - Luego hago exactamente lo mismo pero usando la terminología de docker.</p>
-</div></aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 600px; width: 800px; min-height: 600px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-```
-¯\_(ツ)_/¯
-
-It works 
-
-in my machine
-```
-</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 600px; width: 800px; min-height: 600px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-## Contenedores
-
-Representan el código empaquetado junto con todas sus dependencias, configuraciones, rutinas y herramientas del sistema.
-
-<aside class="notes"><p>dependencias?</p>
-</div></aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 600px; width: 800px; min-height: 600px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-##  Docker
-Permite crear, probar e implementar aplicaciones a través del uso de **contenedores**. 
-
-El uso de contenedores permite a los desarrolladores empaquetar y aislar sus aplicaciones con todo lo que necesitan para ejecutarse, incluidos archivos de aplicaciones, entornos de tiempo de ejecución, bibliotecas dependientes y configuraciones.
-## DockerHub
-Servicio que provee Docker para buscar y compartir imágenes de contenedores.
-</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 600px; width: 800px; min-height: 600px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-<img src="Engi/adjuntos/Pasted image 20220913214214.png" alt="" style="object-fit: scale-down">
-</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 600px; width: 800px; min-height: 600px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-**Docker Image** es estática, inmutable. Puede versionarse.
-
-**Docker Container** es la ejecución *efímera* de un **Docker Image** junto con:
-
-	- Sistema de archivos
-	- Variables de entorno
-	- Uno o más puertos enlazados
-</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 600px; width: 800px; min-height: 600px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-<img src="Engi/adjuntos/architecture.svg" alt="" style="object-fit: scale-down">
-</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 600px; width: 800px; min-height: 600px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-```
-$ docker build -t <nombre_de_la_imagen> .
-$ docker pull <identificador_imagen>:<tag>
-$ docker images
-$ docker run -d --name <nombre_del_contenedor> \
-	-p 8085:8080 <nombre_de_la_imagen>
-$ docker ps -a
-$ docker exect -it <nombre_del_contenedor>
-```
 </div>
 
-<aside class="notes"><p>ubuntu en windows</p>
+<aside class="notes"><p>Docker presentarme, aclarar que pueden interrumpirme y preguntar.</p>
 </aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 600px; width: 800px; min-height: 600px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
---- 
+<img src="Engi/adjuntos/Pasted image 20221023180945.png" alt="" style="object-fit: scale-down">
 
-## Ventajas
 
-- Rápida y sencilla instalación
-- Multiplataforma: Linux, Windows y MacOS
-- Performance nativa en Linux
-- Procesos transparentes de construcción de las imágenes: **Dockerfile**
-- Imágenes livianas: **Linux Alpine**
-- Fácil de construir, de compartir y de publicar: **DockerHub.com**
-- Versionado a través de etiquetas
-</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<aside class="notes"><p>El software informático es parte de la mayoría (sino de todas) las investigaciones científicas de la actualidad y es parte esencial de cualquier recorrido educativo de grado y posgrado, ya sea como medio o como objeto de estudio.<br>    Aunque la reproducibilidad computacional parece más sencilla que replicar experimentos físicos, 
+    - Obsolescencia
+    - Constante actualización. 
+    -¿Quien no tuvo problemas con ejecutar in programa? ¿Linux Windows? ¿Me podrían dar ejemplos de casos que no funcionó? ¿Correciones de trabajos prácticos/finales? //</p>
+</div></aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 600px; width: 800px; min-height: 600px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-## Docker container: Reproducibilidad
+```
+¯\_(ツ)_/¯ It works in my machine
+```
+</div>
 
-
-<img src="Engi/adjuntos/Pasted image 20220910123237.png" alt="" style="width: 400px; object-fit: fill">
-</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<aside class="notes"><p>¿Cómo hacemos para compartirnos software y asegurarnos que no va a haber imprevistos?</p>
+</aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 600px; width: 800px; min-height: 600px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-## Proceso científico
+## Método científico
+- Observación
 - Hipótesis
 - Diseño de Experimentos
-- Recolección de datos
-- Análisis de datos
+- Experimento: Recolección y Análisis de datos
 - Interpretación de resultados
 </div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 600px; width: 800px; min-height: 600px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-## Reproducibilidad
 
 <div class="callout callout-color-default">
 <div class="callout-title">
@@ -206,17 +135,18 @@ $ docker exect -it <nombre_del_contenedor>
 </div>
 <div class="callout-title-inner">
 
-Reproducir en un entorno diferente, el mismo "experimento" con la misma configuración para recrear resultados.
+Reproducibilidad
 
 </div>
 </div>
 <div class="callout-content">
 
+Capacidad de reproducir en un entorno diferente, el mismo experimento con la misma configuración para recrear resultados.
+
 </div>
 </div>
 
-- Recolección de datos
-- Análisis de datos
+-> Recolección y Análisis de datos <-
 </div>
 
 <aside class="notes"><p><a href="https://www.software.ac.uk/blog/2017-02-20-software-reproducibility-possible-and-practical">https://www.software.ac.uk/blog/2017-02-20-software-reproducibility-possible-and-practical</a></p>
@@ -225,22 +155,141 @@ Reproducir en un entorno diferente, el mismo "experimento" con la misma configur
 
 ### ¿Qué necesitamos para la reproducibilidad de software?
 
-- Establecer los pasos y métodos.
-- Definir el entorno de ejecución y sus dependencias.
-- Realizar análisis de datos.
-- Fácil distribución y réplica.
-</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+- Establecer pasos y métodos claros.
+- Definir el entorno de ejecución y toda sus dependencias.
+- Disponer del código o de la aplicación(es).
+- Acceso datos para su procesamiento y análisis.
+- Sea de fácilmente replicable.
+</div>
+
+<aside class="notes"><p>Entorno de ejecución: describe las condiciones bajo las cuales los programas de computadora</p>
+</aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 600px; width: 800px; min-height: 600px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 Measuring Reproducibility in Computer Systems Research (2014)
 
-<img src="Engi/adjuntos/Pasted image 20220915104248.png" alt="" style="width: 500px; object-fit: fill">
+<img src="Engi/adjuntos/Pasted image 20220915104248.png" alt="" style="width: 600px; object-fit: fill">
 </div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 600px; width: 800px; min-height: 600px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-### Aporte a la reproducibilidad del software
+## Contenedores
 
-**Docker Container** te permite empaquetar:
+Representan el código empaquetado junto con todo lo que necesitan para ejecutarse, incluidos archivos de aplicaciones, entornos de ejecución, bibliotecas dependientes y configuraciones.
+
+<aside class="notes"><p>dependencias?</p>
+</div></aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 600px; width: 800px; min-height: 600px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## Docker
+
+Entorno para construir, ejecutar y administrar contenedores
+
+<img src="Engi/adjuntos/Pasted image 20220913214214.png" alt="" style="object-fit: scale-down">
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 600px; width: 800px; min-height: 600px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+**Dockerfile** documento con las instrucciones necesarias para crear una **Imagen Docker**.
+
+```dockerfile
+FROM python:3.9.14-slim-buster
+
+RUN apt-get update 
+
+RUN apt-get install -y --no-install-recommends python3-opencv
+
+WORKDIR /home/app
+
+COPY requirements.txt requirements.txt
+
+RUN pip install --no-cache-dir -r requirements.txt
+
+COPY . .
+
+CMD ["python","/home/app/app.py"]
+```
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 600px; width: 800px; min-height: 600px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+La **Imagen Docker** es estática, inmutable. Puede versionarse.
+
+El **Contenedor Docker** es la ejecución *efímera* de una **Imagen Docker** junto con:
+- Sistema de archivos
+- Variables de entorno
+- Uno o más puertos enlazados
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 600px; width: 800px; min-height: 600px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<img src="Excalidraw/cook.png" alt="" style="object-fit: scale-down">
+</div>
+
+<aside class="notes"><p>Drawing 2022-10-23 17.17.46.excalidraw</p>
+</aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 600px; width: 800px; min-height: 600px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+<img src="Engi/adjuntos/architecture.svg" alt="" style="object-fit: scale-down">
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 600px; width: 800px; min-height: 600px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+##  Docker Container
+Permite crear, probar e implementar aplicaciones a través del uso de **contenedores**. 
+
+## DockerHub o Registry
+Servicio que provee Docker para buscar y compartir imágenes de **contenedores**.
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 600px; width: 800px; min-height: 600px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### Comandos
+
+```bash
+docker build -t <nombre_de_la_imagen> Dockerfile
+
+docker pull <identificador_imagen>:<tag>
+
+docker images
+
+docker run -d --name <nombre_del_contenedor> \
+	-p 8085:8080 <nombre_de_la_imagen>
+	
+docker ps -a
+
+docker exect -it <nombre_del_contenedor>
+```
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 600px; width: 800px; min-height: 600px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+--- 
+
+## Ventajas
+
+- Rápida y sencilla instalación
+- Multiplataforma: Linux, Windows y MacOS
+- Procesos transparentes de construcción de las imágenes: **Dockerfile**
+- Imágenes livianas: **Linux Alpine**
+- Fácil de construir, compartir y publicar: **DockerHub.com**
+- Versionado a través de etiquetas
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 600px; width: 800px; min-height: 600px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## Docker Container y la reproducibilidad del software
+
+
+<img src="Engi/adjuntos/Pasted image 20220910123237.png" alt="" style="width: 600px; object-fit: fill">
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 600px; width: 800px; min-height: 600px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### Desafíos en la reproducibilidad del software
+
+- &shy;<!-- .element: class="fragment" data-fragment-index="1" -->Descripción de los experimentos, entornos, datos y flujos de trabajo -> **Dockerfile**
+- &shy;<!-- .element: class="fragment" data-fragment-index="2" -->Disponibilidad de las dependencias y librerías -> **Docker Images**
+- &shy;<!-- .element: class="fragment" data-fragment-index="3" -->La complejidad de la naturaleza de los experimentos hacen difícil la réplica  del mismo-> **Docker Container**
+- &shy;<!-- .element: class="fragment" data-fragment-index="4" -->Claridad de las actualizaciones y correcciones del software a lo largo del tiempo -> **Versionado**
+- &shy;<!-- .element: class="fragment" data-fragment-index="5" -->Servicio de almacenamiento y distribución -> **DockerHub.com**
+</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 600px; width: 800px; min-height: 600px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+### Aportes al el proceso de aprendizaje y desarrollo
+
+**Docker Container** permite empaquetar:
 - Prototipos (y versionarlos).
 - Pruebas conceptuales.
 - Análisis computacionales o experimentos.
@@ -249,32 +298,24 @@ Todo esto junto con todas las **dependencias** y **configuraciones** dentro de u
 </div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 600px; width: 800px; min-height: 600px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-### Desafíos en la reproducibilidad del software
-
-- Descripción de los experimentos, entornos, datos y flujos de trabajo:
-- Transparencia en la creación de entornos, pasos y métodos para establecer hechos o recrear análisis:
-- Complejidad de la naturaleza de los experimentos e investigación hacen difícil la construcción del mismo:
-- Versionado y disponibilidad de las dependencias en el tiempo:
-- Servicio de almacenamiento y distribución del software:
-</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 600px; width: 800px; min-height: 600px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-### Desafíos en la reproducibilidad del software
-
-- Descripción de los experimentos, entornos, datos y flujos de trabajo -> **Docker Images**
-- Transparencia en la creación de entornos, pasos y métodos para establecer hechos o recrear análisis -> **Dockerfile**
-- Complejidad de la naturaleza de los experimentos e investigación hacen difícil la construcción del mismo-> **Docker Container**
-- Disponibilidad de las dependencias a lo largo del tiempo -> **Versionado**
-- Servicio de almacenamiento y distribución del software -> **DockerHub**
-</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 600px; width: 800px; min-height: 600px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
 ## Caso 1
-Trabajo final de la Especialización en Bioinformática
+[Trabajo final](https://github.com/lalebot/pip-prom-tom) de la Especialización en Bioinformática
 </div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 600px; width: 800px; min-height: 600px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
 ## Caso 2
+Linux en Windows
+
+```bash
+docker run -it --entrypoint=bash ubuntu
+```
+</div>
+
+<aside class="notes"><p>uname -a</p>
+</aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+<div class="" style="position: absolute; left: 0px; top: 0px; height: 600px; width: 800px; min-height: 600px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
+
+## Caso 3
 Reconocimiento de objetos con Pytorch a través de un Webserver Flask en Python
 </div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 600px; width: 800px; min-height: 600px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
@@ -285,18 +326,13 @@ Reconocimiento de objetos con Pytorch a través de un Webserver Flask en Python
 - [An introduction to Docker for reproducible research](https://arxiv.org/pdf/1410.0846.pdf)
 - [How to Docker for computer science](https://towardsdatascience.com/how-to-docker-for-your-computer-science-research-project-the-minimal-guide-for-using-docker-2ecd3e9280ac) 
 - [Why you should use docker in your research?](https://blog.zooniverse.org/2018/07/17/why-you-should-use-docker-in-your-research/)
-</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
+</div>
+
+<aside class="notes"><p><a href="https://www.youtube.com/watch?v=GqqX0j127wA">https://www.youtube.com/watch?v=GqqX0j127wA</a> <a href="https://www.udemy.com/course/docker-de-principiante-a-experto/">https://www.udemy.com/course/docker-de-principiante-a-experto/</a> <a href="https://www.youtube.com/watch?v=IyXGesw8ZJY">https://www.youtube.com/watch?v=IyXGesw8ZJY</a> aa_icse16_docker_technical_briefing.pdf</p>
+</aside></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
 <div class="" style="position: absolute; left: 0px; top: 0px; height: 600px; width: 800px; min-height: 600px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
 
-https://www.youtube.com/watch?v=GqqX0j127wA
-https://www.youtube.com/watch?v=IyXGesw8ZJY
-https://www.udemy.com/course/docker-de-principiante-a-experto/
-https://www.youtube.com/watch?v=9eTVZwMZJsA
-aa_icse16_docker_technical_briefing.pdf
-</div></script></section><section  data-markdown><script type="text/template"><!-- .slide: class="drop" -->
-<div class="" style="position: absolute; left: 0px; top: 0px; height: 600px; width: 800px; min-height: 600px; display: flex; flex-direction: column; align-items: center; justify-content: center" absolute="true">
-
-# Webs
+## Webs
 - [Repositorio de la presentación](https://github.com/lalebot/seminar-docker-in-research)
 - [DockerHub](https://hub.docker.com)
 - [Docker books](https://reconshell.com/free-docker-books/) 
@@ -408,7 +444,7 @@ aa_icse16_docker_technical_briefing.pdf
       // options from URL query string
       var queryOptions = Reveal().getQueryHash() || {};
 
-      var options = extend(defaultOptions, {"width":800,"height":600,"margin":0.04,"controls":true,"progress":true,"slideNumber":false,"transition":"concave","transitionSpeed":"default"}, queryOptions);
+      var options = extend(defaultOptions, {"width":800,"height":600,"margin":0.04,"controls":true,"progress":true,"slideNumber":true,"transition":"concave","transitionSpeed":"normal"}, queryOptions);
     </script>
 
     <script>
